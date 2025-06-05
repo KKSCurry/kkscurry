@@ -47,22 +47,27 @@
       text-decoration: none;
       font-weight: bold;
     }
-    .dropdown-menu {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background-color: #1b1d2e;
-      border-radius: 6px;
-      z-index: 10;
-      min-width: 180px;
-    }
-    .dropdown-menu li {
-      padding: 0.8rem 1rem;
-    }
-    .dropdown:hover .dropdown-menu {
-      display: block;
-    }
+   .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1b1d2e;
+  border-radius: 6px;
+  z-index: 10;
+  min-width: 180px;
+  padding: 0.5rem 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+
 
     .hero {
       background-color: #f1ece9;
