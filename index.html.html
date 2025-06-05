@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>狂草咖哩 KKSCurry</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Noto Sans TC', 'Zen Maru Gothic', sans-serif;
+      background-color: #f7f4f4;
+      color: #2d2c2e;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0e1120;
+      padding: 2rem 0 1rem 0;
+      text-align: center;
+    }
+    header img {
+      width: 280px;
+      height: auto;
+    }
+
+    nav.navbar {
+      background-color: #0e1120;
+      padding: 0;
+      font-size: 0.95rem;
+    }
+    .navbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .navbar li {
+      position: relative;
+      padding: 1rem;
+      color: #f9d56e;
+      cursor: pointer;
+    }
+    .navbar a {
+      color: #f9d56e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #1b1d2e;
+      border-radius: 6px;
+      z-index: 10;
+      min-width: 180px;
+    }
+    .dropdown-menu li {
+      padding: 0.8rem 1rem;
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .hero {
+      background-color: #f1ece9;
+      height: 240px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      margin: 0;
+      color: #1b1d2e;
+    }
+    .hero p {
+      font-size: 1rem;
+      color: #484448;
+      margin-top: 0.5rem;
+    }
+    section {
+      padding: 2rem;
+    }
+    .product {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .product-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      padding: 1rem;
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    footer {
+      background-color: #1b1d2e;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #9cc2ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo_header.png" alt="KKS LOGO">
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li class="dropdown">關於狂草咖哩
+        <ul class="dropdown-menu">
+          <li><a href="#">品牌故事</a></li>
+          <li><a href="#">購買須知</a></li>
+          <li><a href="#">合作洽詢</a></li>
+        </ul>
+      </li>
+      <li><a href="#products">產品</a></li>
+      <li><a href="#form">訂購表單</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <h1>手間も時間も、ぜんぶ味になる。</h1>
+    <p>｜今 天 也 想 好 好 吃 飯 .ᐟ.ᐟ</p>
+  </div>
+
+  <section id="products">
+    <h2 style="text-align:center;">產品介紹</h2>
+    <div class="product">
+      <div class="product-card">
+        <img src="keema_curry.jpg" alt="和風豬肉乾咖哩">
+        <h3>和風豬肉乾咖哩（原味）</h3>
+        <p>NT$140</p>
+        <p>溫和香料 ✕ 甘甜肉汁的日式魂。</p>
+      </div>
+      <div class="product-card">
+        <img src="beef_curry.jpg" alt="秘製辣燉牛腩咖哩">
+        <h3>秘製辣燉牛腩咖哩（中辛）</h3>
+        <p>NT$180</p>
+        <p>微辣香料 ✕ 牛腩燉煮的深夜氣味。</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    📍 IG：<a href="https://www.instagram.com/kkscurry/" target="_blank">@kkscurry</a>　
+    FB：<a href="https://www.facebook.com/kkscurry" target="_blank">KKSCurry</a><br><br>
+    © 2025 狂草咖哩 KKSCurry
+  </footer>
+</body>
+</html>
